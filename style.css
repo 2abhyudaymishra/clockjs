@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Satisfy;
+    font-size: 3vw;
+}
+
+.circle{
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+    margin: 10vh auto;
+    border-radius: 50%;
+    background-color: black;
+}
+.innercircle{
+    position:absolute;
+    margin: auto;
+    top: 2%;
+    left: 2.5%;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, rgb(41, 128, 185), rgb(109, 213, 250), rgb(166, 223, 247));
+}
+.time{
+    border-radius: 50%;
+    border: 5px solid white;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: large;
+}
+.num{
+    position: absolute;
+    text-align: center;
+    height: 98%;
+    width: 98%;
+}
+.one{transform: rotate(30deg);}
+.two{transform: rotate(60deg);}
+.three{transform: rotate(90deg);}
+.four{transform: rotate(120deg);}
+.five{transform: rotate(150deg);}
+.six{transform: rotate(180deg);}
+.seven{transform: rotate(210deg);}
+.eight{transform: rotate(240deg);}
+.nine{transform: rotate(270deg);}
+.ten{transform: rotate(300deg);}
+.eleven{transform: rotate(330deg);}
+
+#hour,#min,#sec,#cover{
+    position: absolute;
+    border: 1px solid black; 
+    border-radius: 50px;
+    transform-origin: bottom;
+}
+#hour{
+    height: 24%;
+    left: 48.8%;
+    width: 1.5%;
+    top: 27%;
+    background: black;
+    opacity: 0.8;
+    z-index: 3;
+
+}
+#min{
+    left: 48.8%;
+    height: 31%;
+    width: 1.5%;
+    top: 20%;
+    background: black ;
+    z-index: 2;
+}
+#sec{  
+    left: 49%;
+    height: 38%;
+    width: 1%;
+    top: 13%;
+    background: rgb(70, 69, 69);
+    z-index: 1;
+}
+#cover{
+    height: 2%;
+    left: 48.5%;
+    width: 2%;
+    border-radius: 50%;
+    top: 50%;
+    background: whitesmoke;
+    border: 2px solid black;
+    z-index: 4; 
+}
