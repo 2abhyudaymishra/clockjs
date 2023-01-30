@@ -1,30 +1,53 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width" />
     <script src="index.js"></script>
     <title>Clock</title>
 </head>
 <body>
-    <div class="circle">
+    <label class="switch" >
+        <input type="checkbox" id="switched">
+        <span class="slider" ></span>
+    </label>
+
+    <div class="circle" id="circle">
         <div class="innercircle">
             <div class="time">
-            <div class="num one">1</div>
-            <div class="num two">2</div>
+                <h2>Analog Clock</h2>
+            <div class="num one">|</div>
+            <div class="num two">|</div>
             <div class="num three">3</div>
-            <div class="num four">4</div>
-            <div class="num five">5</div>
-            <div class="num six">6</div>
-            <div class="num seven">7</div>
-            <div class="num eight">8</div>
+            <div class="num four">|</div>
+            <div class="num five">|</div>
+            <div class="num six">9</div>
+            <div class="num seven">|</div>
+            <div class="num eight">|</div>
             <div class="num nine">9</div>
-            <div class="num ten">10</div>
-            <div class="num eleven">11</div>
+            <div class="num ten">|</div>
+            <div class="num eleven">|</div>
             <div class="num twelve">12</div>
             <div id="hour"></div>
             <div id="min"></div>
             <div id="sec"></div>
             <div id="cover"></div>
 
+            </div>
+        </div>
+    </div>
+
+    <div class="digital dispn" id="digital">
+        <h3>DIGITAL CLOCK</h3>
+        <div class="dtime">
+            <div id="dhour"></div>
+            <div id="dmin"></div>
+            <div id="dsec"></div>
+        </div>
+        <div class="dcal">
+            Date : 
+            <div id="ddate"></div>
+            <div id="dmonth"></div>
+            <div id="dyear"></div>
         </div>
     </div>
 
